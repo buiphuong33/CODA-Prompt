@@ -69,6 +69,7 @@ class Trainer:
         self.tasks = []
         self.tasks_logits = []
         p = 0
+        
         while p < num_classes and (args.max_task == -1 or len(self.tasks) < args.max_task):
             inc = args.other_split_size if p > 0 else args.first_split_size
             self.tasks.append(class_order[p:p+inc])
