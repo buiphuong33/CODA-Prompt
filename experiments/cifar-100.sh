@@ -8,7 +8,7 @@ OUTDIR=outputs/${DATASET}/10-task
 
 # hard coded inputs
 # ko có gpu
-GPUID='0'
+GPUID='0 1'
 CONFIG=configs/cifar-100_prompt.yaml
 CONFIG_FT=configs/cifar-100_ft.yaml
 REPEAT=1
